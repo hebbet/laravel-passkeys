@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.3 - 2025-05-12
+
+### What's Changed
+
+* Create passkeys.php by @nessimabadi in https://github.com/spatie/laravel-passkeys/pull/40
+
+### New Contributors
+
+* @nessimabadi made their first contribution in https://github.com/spatie/laravel-passkeys/pull/40
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.2...1.0.3
+
 ## 1.0.2 - 2025-05-12
 
 ### What's Changed
