@@ -32,7 +32,7 @@ class User extends Authenticatable implements HasPasskeys
 }
 ```
 
-### Step 4: Optionally set the `AUTH_MODEL` in your `.env` file
+### Step 3: Optionally set the `AUTH_MODEL` in your `.env` file
 
 You'll only need to do this if you're not using the default `User` model. If you're using a different model to authenticate, you must set the `AUTH_MODEL` in your `.env` file to the class name of the model that should be authenticated using passkeys.
 
