@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.2 - 2025-05-12
+
+### What's Changed
+
+* startAuthentication refactor to expected call structure by @sdebacker in https://github.com/spatie/laravel-passkeys/pull/39
+
+### New Contributors
+
+* @sdebacker made their first contribution in https://github.com/spatie/laravel-passkeys/pull/39
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.1...1.0.2
+
 ## 1.0.1 - 2025-05-12
 
 ### What's Changed
