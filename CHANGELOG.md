@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.4 - 2025-05-18
+
+### What's Changed
+
+* add german translation by @NastyOOF in https://github.com/spatie/laravel-passkeys/pull/45
+
+### New Contributors
+
+* @NastyOOF made their first contribution in https://github.com/spatie/laravel-passkeys/pull/45
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.3...1.0.4
+
 ## 1.0.3 - 2025-05-12
 
 ### What's Changed
