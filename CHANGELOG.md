@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.5 - 2025-05-19
+
+### What's Changed
+
+* Add French and Dutch translations for passkeys by @Mantix in https://github.com/spatie/laravel-passkeys/pull/47
+
+### New Contributors
+
+* @Mantix made their first contribution in https://github.com/spatie/laravel-passkeys/pull/47
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.4...1.0.5
+
 ## 1.0.4 - 2025-05-18
 
 ### What's Changed
