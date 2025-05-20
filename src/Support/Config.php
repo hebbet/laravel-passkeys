@@ -92,6 +92,8 @@ class Config
 
     public static function getRedirectAfterLogin(): ?string
     {
-        return config('passkeys.redirect_to_after_login');
+        return redirect()
+            ->intended(config('passkeys.redirect_to_after_login'))
+            ->getTargetUrl();
     }
 }
