@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.8 - 2025-05-20
+
+### What's Changed
+
+* Redirect to intended URL by @mralston in https://github.com/spatie/laravel-passkeys/pull/50
+
+### New Contributors
+
+* @mralston made their first contribution in https://github.com/spatie/laravel-passkeys/pull/50
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.7...1.0.8
+
 ## 1.0.7 - 2025-05-20
 
 ### What's Changed
