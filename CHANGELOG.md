@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.9 - 2025-06-10
+
+### What's Changed
+
+* Turkish translation of passkeys.php by @altayevrim in https://github.com/spatie/laravel-passkeys/pull/53
+
+### New Contributors
+
+* @altayevrim made their first contribution in https://github.com/spatie/laravel-passkeys/pull/53
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.8...1.0.9
+
 ## 1.0.8 - 2025-05-20
 
 ### What's Changed
