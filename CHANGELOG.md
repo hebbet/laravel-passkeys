@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.10 - 2025-06-19
+
+### What's Changed
+
+* Add Arabic translations for passkeys by @salahhusa9 in https://github.com/spatie/laravel-passkeys/pull/59
+
+### New Contributors
+
+* @salahhusa9 made their first contribution in https://github.com/spatie/laravel-passkeys/pull/59
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.9...1.0.10
+
 ## 1.0.9 - 2025-06-10
 
 ### What's Changed
