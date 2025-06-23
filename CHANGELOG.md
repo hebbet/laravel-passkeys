@@ -2,6 +2,19 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.11 - 2025-06-23
+
+### What's Changed
+
+* add Simplified Chinese translations by @tanshiqi in https://github.com/spatie/laravel-passkeys/pull/60
+* Bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot in https://github.com/spatie/laravel-passkeys/pull/56
+
+### New Contributors
+
+* @tanshiqi made their first contribution in https://github.com/spatie/laravel-passkeys/pull/60
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.10...1.0.11
+
 ## 1.0.10 - 2025-06-19
 
 ### What's Changed
