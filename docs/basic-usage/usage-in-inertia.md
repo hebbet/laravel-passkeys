@@ -21,7 +21,7 @@ $user = auth()->user();
 
 return Inertia::render('Profile/Settings', [
     'user' => $user,
-    'passkeys' => 'passkeys' => $user->passkeys()
+    'passkeys' => $user->passkeys()
 			->get()
 			->map(fn ($key) => $key->only(['id', 'name', 'last_used_at'])),
 ]);
