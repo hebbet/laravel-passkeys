@@ -2,6 +2,21 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.0.12 - 2025-07-28
+
+### What's Changed
+
+* Fix typo in passkeys array assignment in Inertia usage documentation. by @HichemTab-tech in https://github.com/spatie/laravel-passkeys/pull/62
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/spatie/laravel-passkeys/pull/68
+* Add Hungarian translations for passkeys by @Panyi in https://github.com/spatie/laravel-passkeys/pull/67
+
+### New Contributors
+
+* @HichemTab-tech made their first contribution in https://github.com/spatie/laravel-passkeys/pull/62
+* @Panyi made their first contribution in https://github.com/spatie/laravel-passkeys/pull/67
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.11...1.0.12
+
 ## 1.0.11 - 2025-06-23
 
 ### What's Changed
