@@ -2,6 +2,21 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.1.0 - 2025-09-25
+
+### What's Changed
+
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/spatie/laravel-passkeys/pull/71
+* Update issue template by @AlexVanderbist in https://github.com/spatie/laravel-passkeys/pull/73
+* Add authenticator selection criteria to GeneratePasskeyRegisterOptions by @DSpeichert in https://github.com/spatie/laravel-passkeys/pull/74
+
+### New Contributors
+
+* @AlexVanderbist made their first contribution in https://github.com/spatie/laravel-passkeys/pull/73
+* @DSpeichert made their first contribution in https://github.com/spatie/laravel-passkeys/pull/74
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.0.12...1.1.0
+
 ## 1.0.12 - 2025-07-28
 
 ### What's Changed
