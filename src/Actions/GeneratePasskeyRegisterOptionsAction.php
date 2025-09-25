@@ -6,6 +6,7 @@ use Illuminate\Support\Str;
 use Spatie\LaravelPasskeys\Models\Concerns\HasPasskeys;
 use Spatie\LaravelPasskeys\Support\Config;
 use Spatie\LaravelPasskeys\Support\Serializer;
+use Webauthn\AuthenticatorSelectionCriteria;
 use Webauthn\PublicKeyCredentialCreationOptions;
 use Webauthn\PublicKeyCredentialRpEntity;
 use Webauthn\PublicKeyCredentialUserEntity;
@@ -20,6 +21,8 @@ class GeneratePasskeyRegisterOptionsAction
             rp: $this->relatedPartyEntity(),
             user: $this->generateUserEntity($authenticatable),
             challenge: $this->challenge(),
+            authenticatorSelection: $this->authenticatorSelection(),
+            attestation: PublicKeyCredentialCreationOptions::ATTESTATION_CONVEYANCE_PREFERENCE_NONE,
         );
 
         if ($asJson) {
@@ -50,5 +53,15 @@ class GeneratePasskeyRegisterOptionsAction
     protected function challenge(): string
     {
         return Str::random();
+    }
+
+
+    public function authenticatorSelection(): AuthenticatorSelectionCriteria
+    {
+        return new AuthenticatorSelectionCriteria(
+            null,
+            AuthenticatorSelectionCriteria::USER_VERIFICATION_REQUIREMENT_PREFERRED,
+            AuthenticatorSelectionCriteria::RESIDENT_KEY_REQUIREMENT_REQUIRED,
+        );
     }
 }
