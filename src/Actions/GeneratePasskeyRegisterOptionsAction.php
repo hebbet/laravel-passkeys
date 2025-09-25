@@ -55,7 +55,6 @@ class GeneratePasskeyRegisterOptionsAction
         return Str::random();
     }
 
-
     public function authenticatorSelection(): AuthenticatorSelectionCriteria
     {
         return new AuthenticatorSelectionCriteria(
