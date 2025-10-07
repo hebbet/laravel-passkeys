@@ -3,6 +3,8 @@
 namespace Spatie\LaravelPasskeys\Support;
 
 use Symfony\Component\Serializer\Serializer as SymfonySerializer;
+use Symfony\Component\Serializer\Encoder\JsonEncode;
+use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Webauthn\AttestationStatement\AttestationStatementSupportManager;
 use Webauthn\Denormalizer\WebauthnSerializerFactory;
 
@@ -24,7 +26,14 @@ class Serializer
 
     public function toJson(mixed $value): string
     {
-        return $this->serializer->serialize($value, 'json');
+        return $this->serializer->serialize(
+            $value,
+            'json',
+            [
+                AbstractObjectNormalizer::SKIP_NULL_VALUES => true,
+                JsonEncode::OPTIONS => JSON_THROW_ON_ERROR,
+            ]
+        );
     }
 
     /**
