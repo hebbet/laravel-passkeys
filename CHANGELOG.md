@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.2.0 - 2025-10-09
+
+### What's Changed
+
+* Skip null values added to serializer by @jegelkraut in https://github.com/spatie/laravel-passkeys/pull/77
+
+### New Contributors
+
+* @jegelkraut made their first contribution in https://github.com/spatie/laravel-passkeys/pull/77
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.1.0...1.2.0
+
 ## 1.1.0 - 2025-09-25
 
 ### What's Changed
