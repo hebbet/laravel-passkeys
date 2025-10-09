@@ -2,9 +2,9 @@
 
 namespace Spatie\LaravelPasskeys\Support;
 
-use Symfony\Component\Serializer\Serializer as SymfonySerializer;
 use Symfony\Component\Serializer\Encoder\JsonEncode;
 use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
+use Symfony\Component\Serializer\Serializer as SymfonySerializer;
 use Webauthn\AttestationStatement\AttestationStatementSupportManager;
 use Webauthn\Denormalizer\WebauthnSerializerFactory;
 
