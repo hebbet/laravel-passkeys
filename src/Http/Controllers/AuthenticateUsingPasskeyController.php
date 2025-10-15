@@ -37,16 +37,16 @@ class AuthenticateUsingPasskeyController
             return $this->invalidPasskeyResponse();
         }
 
-        $this->logInAuthenticatable($authenticatable);
+        $this->logInAuthenticatable($authenticatable, $request->boolean('remember'));
 
         $this->firePasskeyEvent($passkey, $request);
 
         return $this->validPasskeyResponse($request);
     }
 
-    protected function logInAuthenticatable(Authenticatable $authenticatable): self
+    protected function logInAuthenticatable(Authenticatable $authenticatable, bool $remember = false): self
     {
-        auth()->login($authenticatable);
+        auth()->login($authenticatable, $remember);
 
         Session::regenerate();
 
