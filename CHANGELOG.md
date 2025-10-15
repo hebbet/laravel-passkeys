@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.3.0 - 2025-10-15
+
+### What's Changed
+
+* Bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/spatie/laravel-passkeys/pull/78
+* Make allowedOrigins configurable by @jegelkraut in https://github.com/spatie/laravel-passkeys/pull/79
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.2.0...1.3.0
+
 ## 1.2.0 - 2025-10-09
 
 ### What's Changed
