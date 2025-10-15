@@ -8,7 +8,6 @@ use Spatie\LaravelPasskeys\Support\Serializer;
 use Throwable;
 use Webauthn\AuthenticatorAssertionResponse;
 use Webauthn\AuthenticatorAssertionResponseValidator;
-use Webauthn\CeremonyStep\CeremonyStepManagerFactory;
 use Webauthn\PublicKeyCredential;
 use Webauthn\PublicKeyCredentialRequestOptions;
 use Webauthn\PublicKeyCredentialSource;
@@ -79,7 +78,11 @@ class FindPasskeyToAuthenticateAction
         PublicKeyCredentialRequestOptions $passkeyOptions,
         Passkey $passkey,
     ): ?PublicKeyCredentialSource {
-        $csmFactory = new CeremonyStepManagerFactory;
+        $configureCeremonyStepManagerFactory = Config::getAction(
+            'configure_ceremony_step_manager_factory',
+            ConfigureCeremonyStepManagerFactoryAction::class
+        );
+        $csmFactory = $configureCeremonyStepManagerFactory->execute();
         $requestCsm = $csmFactory->requestCeremony();
 
         try {
