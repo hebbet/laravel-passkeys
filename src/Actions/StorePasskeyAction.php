@@ -6,11 +6,11 @@ use Spatie\LaravelPasskeys\Exceptions\InvalidPasskey;
 use Spatie\LaravelPasskeys\Exceptions\InvalidPasskeyOptions;
 use Spatie\LaravelPasskeys\Models\Concerns\HasPasskeys;
 use Spatie\LaravelPasskeys\Models\Passkey;
+use Spatie\LaravelPasskeys\Support\Config;
 use Spatie\LaravelPasskeys\Support\Serializer;
 use Throwable;
 use Webauthn\AuthenticatorAttestationResponse;
 use Webauthn\AuthenticatorAttestationResponseValidator;
-use Webauthn\CeremonyStep\CeremonyStepManagerFactory;
 use Webauthn\PublicKeyCredential;
 use Webauthn\PublicKeyCredentialCreationOptions;
 use Webauthn\PublicKeyCredentialSource;
@@ -52,7 +52,11 @@ class StorePasskeyAction
             throw InvalidPasskey::invalidPublicKeyCredential();
         }
 
-        $csmFactory = new CeremonyStepManagerFactory;
+        $configureCeremonyStepManagerFactory = Config::getAction(
+            'configure_ceremony_step_manager_factory',
+            ConfigureCeremonyStepManagerFactoryAction::class
+        );
+        $csmFactory = $configureCeremonyStepManagerFactory->execute();
         $creationCsm = $csmFactory->creationCeremony();
 
         try {
