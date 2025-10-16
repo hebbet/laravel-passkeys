@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.4.0 - 2025-10-16
+
+### What's Changed
+
+* Remember me option added by @jegelkraut in https://github.com/spatie/laravel-passkeys/pull/80
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.3.0...1.4.0
+
 ## 1.3.0 - 2025-10-15
 
 ### What's Changed
