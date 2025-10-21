@@ -7,12 +7,6 @@ parameters:
 			path: src/Actions/FindPasskeyToAuthenticateAction.php
 
 		-
-			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Http/Components/AuthenticatePasskeyComponent.php
-
-		-
 			message: '#^Negated boolean expression is always false\.$#'
 			identifier: booleanNot.alwaysFalse
 			count: 1
@@ -21,12 +15,6 @@ parameters:
 		-
 			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable&Spatie\\LaravelPasskeys\\Models\\Concerns\\HasPasskeys\:\:\$passkeys\.$#'
 			identifier: property.notFound
-			count: 1
-			path: src/Livewire/PasskeysComponent.php
-
-		-
-			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Livewire/PasskeysComponent.php
 
