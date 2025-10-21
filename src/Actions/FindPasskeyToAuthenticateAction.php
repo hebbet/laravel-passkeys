@@ -78,11 +78,11 @@ class FindPasskeyToAuthenticateAction
         PublicKeyCredentialRequestOptions $passkeyOptions,
         Passkey $passkey,
     ): ?PublicKeyCredentialSource {
-        $configureCeremonyStepManagerFactory = Config::getAction(
+        $configureCeremonyStepManagerFactoryAction = Config::getAction(
             'configure_ceremony_step_manager_factory',
             ConfigureCeremonyStepManagerFactoryAction::class
         );
-        $csmFactory = $configureCeremonyStepManagerFactory->execute();
+        $csmFactory = $configureCeremonyStepManagerFactoryAction->execute();
         $requestCsm = $csmFactory->requestCeremony();
 
         try {
