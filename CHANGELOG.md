@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.4.1 - 2025-10-21
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.4.0...1.4.1
+
 ## 1.4.0 - 2025-10-16
 
 ### What's Changed
