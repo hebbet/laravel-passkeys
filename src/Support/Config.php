@@ -63,7 +63,7 @@ class Config
      */
     public static function getActionClass(string $actionName, string $actionBaseClass): string
     {
-        $actionClass = config("passkeys.actions.{$actionName}");
+        $actionClass = config("passkeys.actions.{$actionName}") ?? $actionBaseClass;
 
         self::ensureValidActionClass($actionName, $actionBaseClass, $actionClass);
 
